@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Dark theme */
+    color: #fff; /* White text */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 1.75rem;
+    color: #FFD700; /* Yellow color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+.contact-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #FFD700;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    height: 80vh;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.hero-text h1 span {
+    color: #FFD700;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #FFD700;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+
+.hero-image img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Add margin to create gaps between sections */
+section {
+    padding: 50px;
+    text-align: center;
+    margin: 30px 0; /* 30px gap between each section */
+}
+
+/* Specific styling for each section using IDs */
+#aboutme {
+    background-color: #222;
+}
+
+#education {
+    background-color: #333;
+}
+
+#Experience {
+    background-color: #444;
+}
+
+#Extracurriculars {
+    background-color: #555;
+}
+#Swimming {
+    background-color: #666
+}
+#Swimming .text-column img {
+    width: 100%; /* Make the image span the full width of the column */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Add spacing below the image */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  }
+
+  #Swimming h2 {
+    margin-bottom: 30px;
+    font-size: 36px; /* Adjust the font size to make the title larger */
+    font-weight: bold; 
+  }
+
+  #Swimming .subheading {
+    font-size: 22px; /* Adjust the size of the subheading */
+    font-weight: bold; /* Make the subheading bold */
+    margin-top: 30px;
+    margin-bottom: 10px; /* Add space below the subheading */
+    color: #fff; /* Optional: Lighter text color for subheading */
+  }
+  
+  #Swimming ul {
+    list-style-type: disc; /* Use bullets for the list items */
+    margin: 0;
+    padding-left: 20px; /* Indent the list items slightly */
+  }
+  
+  #Swimming li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 18px; /* Adjust font size for the list items */
+    text-align: left;
+/* Adjust margins to ensure each section has space from the others */
+  }
+
+#aboutme, #education, #Experience, #Extracurriculars, #Swimming {
+    margin-top: 50px; /* Top margin to space sections further apart */
+    margin-bottom: 50px; /* Bottom margin to add space before the next section */
+    text-indent: 0;
+}
+
+/* Styling for the section text */
+.section-text {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
