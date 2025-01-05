@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jack Gill</title>
+    <link rel="stylesheet" href="PersonalPortfolio.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">J.G.</div>
+        <ul class="nav-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Extracurriculars">Extracurriculars</a></li>
+            <li><a href="#Swimming">Swimming</a></li>
+        </ul>            
+        <button class="contact-btn">
+            <a href="#contact">Contact Me</a>
+        </button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <p>Hello,</p>
+            <h1>I'm <span>Jack</span></h1>
+            <h2>Aspiring Biomedical Researcher</h2>
+            <p>I am an aspiring biomedical researcher focused on using synthetic biology and engineering to develop innovative solutions that improve healthcare and empower individuals with disabilities.</p>
+            
+            <button class="resume-btn" onclick="downloadResume()">My Resume</button>
+
+        </div>
+        <div class="hero-image">
+            <img src="IMG_1857 copy.png" alt="Jack Gill">
+        </div>
+    </header>
+
+    <script>
+        // JavaScript function to download resume
+        function downloadResume() {
+          window.open('Resume.pdf', '_blank');
+        }
+      </script>
+
+    <!-- Section 2 -->
+    <section id="about-me">
+        <div class="about-me-container">
+            <div class="image">
+                <img src="IMG_1876.JPG" alt="Your Name" class="about-me-image">
+            </div>
+            <div class="text">
+                <h2>About Me</h2>
+                <p> Hello! I’m Jack Gill, a student-athlete in my third year at McGill working on my Major in Mathematics and Biology. I have long been fascinated by the intersection of Mathematics and Biology and the potential for mathematical methods to enhance our understanding of complex biological systems. My passion lies in Neurology—a field I connect with personally as someone with cerebral palsy. This connection drives my commitment to exploring the intricacies of the brain and nervous system and finding ways to improve the lives of individuals with neurological disabilities.</p>
+                <p>Outside of academics, I am a member of Canada’s National Para Swimming team who recently had the honor of representing Canada at the 2023 Para Pan American Games where I earned a bronze medal in the 100m Freestyle. Through this digital portfolio, I aim to share my passion for life sciences, my journey as a student athlete, and my desire to contribute to improving the lives of people with disabilities through innovative treatments and unique perspectives. Thank you for visiting – welcome to my digital portfolio!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid">
+        <div id="education" class="grid-item" onclick="toggleText(this)" style="background-image: url('Mcgill.png');">
+          <h2>Education</h2>
+          <p class="more-text hidden">Currently in my third year at McGill University pursuing a B.Sc in Mathematics and Biology with a specialized focus in Applied Mathematics and Neuroscience streams. My coursework spans Organic Chemistry, Physical Molecular and Cell Biology, Ordinary Differential Equations, Calculus, Real Analysis and Python, providing me with a solid foundation in both theoretical and computational methods. </p>
+        </div>
+        <div id="Swimming" class="grid-item" onclick="toggleText(this)" style="background-image: url('IMG_1101.jpeg');">
+          <h2>Swimming</h2>
+          <p class="more-text hidden"> Athlete on Canada’s National Para-swimming Team and a varsity athlete on the McGill Swim Team. Competed internationally at the 2022 Madeira World Para Swimming Championships and the 2023 Santiago Para Pan American games representing Canada. At the 2023 Para Pan American games, I won a bronze medal in the 100m freestyle. Beyond the podium, I assumed a leadership role as the representative for my coaching group addressing the team’s concerns and fostering effective communication between coaches and athletes.</p>
+          
+        </div>
+        <div id="Extracurriculars" class="grid-item" onclick="toggleText(this)" style="background-image: url('IMG_0403.jpeg');">
+          <h2>Extracurriculars</h2>
+          <p class="more-text hidden">Previous volunteer for the Special Olympics, and actively looking for more opportunities to give back to the community.</p>
+        </div>
+        <div id="Experience" class="grid-item" onclick="toggleText(this)" style="background-image: url('Shoes.jpg');">
+          <h2>Experience</h2>
+          <p class="more-text hidden"> Lifeguard and swim instructor for the YMCA and previous assistant coach for UCRO. Maintained a safe environment for all guests by providing emergency medical services and through instructing, mentored Brockville youth to develop key skills in and out of the water.</p>
+          
+        </div>
+      </div>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Mail : jagergill@outlook.com &nbsp;&nbsp;&nbsp; Phone: +1 613 213 8005</p>
+    <!-- Add more contact details here -->
+  </section>
+
+    <script src="Script.js"></script> <!-- Link to your JavaScript file -->
+
+    <footer>
+        <p>&copy; 2024 Jack Gill </p>
+    </footer>
+
+</body>
+</html>
