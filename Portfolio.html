@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="Jack_Gill_Academic_Resume.pdf"target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="image-container">
+                <img src="IMG_1857.jpeg" alt="Jack Gill">
+            </div>
+            <h1>Jack Gill</h1>
+            <p>Student at McGill University</p>
+            <p>Team Canada Swimmer</p>
+
+            <div class="social-links">
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/jagdevgill/" target="_blank">
+                        <i class="fab fa-linkedin social-icon"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="social-item">
+                    <a href="mailto:jagergill@outlook.com">
+                        <i class="fas fa-envelope social-icon"></i> Email
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <section>
+                <h2>Hi there, I'm Jack!</h2>
+                <p> 🔬 I'm an aspiring biomedical researcher</p>
+                <p> 🇨🇦 I'm also a member of Canada's para swimming team</p>
+                <p> 🧬 I'm passionate about mathematical modelling, neuroscience and genomics</p>
+            </section>
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>I am currently a third year student at McGill University, pursuing a major in Biology and Mathematics. I am passionate about leveraging mathematical models to deepen our understanding of complex biological systems.  Through this digital portfolio, I aim to showcase my passion for life sciences, my journey as a student-athlete, and my commitment to contributing to impactful research. </p>
+                <p>Welcome to my digital space!</p>
+            </section>
+            <section class="education-section">
+                <h2>Education</h2>
+                <p>Currently pursuing a Bachelor of Science in Biology and Mathematics at McGill University.</p>
+                <p> My coursework spans Physical Molecular and Cell Biology, Cellular Neurobiology, Behavioural Biology, Ordinary Differential Equations, Calculus and Statistics.</p>
+            </section>
+            <section class="experience-section">
+                <h2>Experience and Volunteer Work</h2>
+                <div class="experience-container">
+                    <div class="experience-box" onclick="openModal(1)">
+                        <img src="Cansarc.png" alt="Experience 1">
+                        <p>Incoming Research Assistant</p>
+                    </div>
+                    <div class="experience-box" onclick="openModal(2)">
+                        <img src="MCH.png" alt="Experience 2">
+                        <p>Patient Care Volunteer</p>
+                    </div>
+                    <div class="experience-box" onclick="openModal(3)">
+                        <img src="YMCA.png" alt="Experience 3">
+                        <p>Lifeguard and Swim Instructor</p>
+                    </div>
+                    <div class="experience-box" onclick="openModal(4)">
+                        <img src="swimming.png" alt="Experience 4">
+                        <p>Team Canada Paraswimmer</p>
+                    </div>
+                    <div class="experience-box" onclick="openModal(5)">
+                        <img src="RTP.png" alt="Experience 5">
+                        <p>Vice President of Varsity Relations</p>
+                    </div>
+                    <div class="experience-box" onclick="openModal(6)">
+                        <img src="SWAM.png" alt="Experience 6">
+                        <p>Volunteer Swim Instructor</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h2>Incoming Research Assistant</h2>
+            <p>More info comming soon.</p>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h2>Patient Care Volunteer</h2>
+            <p> • Provided companionship and assisted elderly patients with daily activities, enhancing their overall well-being and comfort.</p>
+            <p> • Lead recreational activities to foster  social interaction and support the mental well-being of elderly patients.</p>
+    </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+            <h2>Lifeguard and Swim Instructor</h2>
+            <p> • Delivered prompt and effective emergency medical services, ensuring the safety and well-being of all guests.</p>
+            <p> • Instructed over 200 youth in progressive swimming techniques helping them build confidence and master key swimming skills.</p>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <h2>Team Canada Athlete - Paraswimming Program</h2>
+            <p> • Won a bronze medal in the 100m freestyle at the 2023 Santiago Para Pan American Games, demonstrating resilience and high performance on the international stage.</p>
+            <p> • Broke the Canadian record in the 4×100m medley 34 points relay at the Madeira 2022 World Para Swimming Championships, showcasing excellence in high-performance competition.</p>
+            <p> • Served as a leadership representative, addressing athlete concerns and fostering effective communication between coaching staff and team members, contributing to a supportive and unified team environment</p>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <h2>Vice President of Varsity Relations</h2>
+            <p> • Led fundraising initiatives, raising funding to expand sports accessibility programs for underprivileged youth.</p>
+            <p> • Coordinated and led weekly Play Days, engaging children in dynamic sports activities that promote teamwork, confidence, and an active lifestyle.</p>
+        </div>
+    </div>
+    
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(6)">&times;</span>
+            <h2>Volunteer Swim Instructor</h2>
+            <p> • Delivered personalized one-on-one swim instruction to children with disabilities, fostering water safety, confidence, and independence in the pool.</p>
+        </div>
+    </div>
+
+<script src="Research.js"></script>
+</body>

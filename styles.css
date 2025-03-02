@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Default navbar (for large screens) */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    padding: 20px 20px;
+    border-bottom: 1px solid lightgray; /* Adds a subtle gray line */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+/* Hamburger menu (for small screens) */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    margin-top: 60px; 
+    width: 25%;
+    background-color: #f2f2f2;
+    color: black;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.sidebar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+}
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the icons vertically */
+    gap: 10px;
+}
+a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Make the text color black */
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    font-size: 16px; /* Adjust icon size to text size */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+
+.social-item span {
+    color: black; /* Text color to the right of icons */
+    font-size: 16px; /* Adjust text size */
+}
+
+.content {
+    font-size: 18px;
+    margin-left: 25%; /* Leaves space for sidebar */
+    padding: 20px;
+    padding-top: 80px;
+    width: 75%;
+}
+
+section {
+    margin-bottom: 20px; /* Adds space between sections */
+}
+
+.about-me h2{
+    border-bottom: 1px solid lightgrey; /* Adds the line below the title */
+    margin-top: 30px; /* Adds space above About Me section */
+}
+.about-me p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+.about-me {
+    margin-bottom: 60px; /* Remove any extra bottom margin */
+}
+
+
+.education-section h2 {
+    border-bottom: 1px solid lightgrey;
+    margin-top: 30px;
+}
+
+.education-section p {
+    margin-bottom: 20px;
+}
+.education-section {
+    margin-bottom: 60px;
+}
+.experience-section h2{
+    border-bottom: 1px solid lightgrey; /* Adds the line below the title */
+    margin-top: 30px;
+    margin-left: 0; /* Remove any extra left margin */
+    padding-left: 0; /* Remove any extra left padding */
+}
+.experience-section {
+    margin-left: 0; /* Align the experience section to the left */
+    width: 100%; /* Full width without additional space */
+    margin-top: 30px;
+}
+
+.experience-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start; /* Keep items aligned to the left */
+    flex-wrap: wrap;
+    width: 100%;
+}
+.experience-box {
+    width: 30%; /* Adjust width to fit 3 boxes per row */
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.experience-box p {
+    margin-top: auto; /* Push text to the bottom */
+}
+
+
+/* Modal - Hidden by default */
+.modal {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Position the modal 20px above the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 80%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding to give space around the modal */
+    box-sizing: border-box; /* Ensure padding doesn't stretch the modal */
+}
+
+/* Modal content */
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal-content img {
+    width: 100%; /* Makes the image fit within the modal */
+    max-width: 300px; /* Limits the size */
+    height: auto; /* Keeps the aspect ratio */
+}
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .modal-content {
+        width: 80%;
+    }
+    .experience-container {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center; /* Center align on smaller screens */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .experience-box {
+        width: 100%;
+        padding: 10px;
+    }
+    .content {
+        margin-left: 0; /* Adjust content margin on smaller screens */
+        width: 100%;
+    }
+    .education-section {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+}
